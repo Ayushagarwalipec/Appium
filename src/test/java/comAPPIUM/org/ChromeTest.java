@@ -53,6 +53,8 @@ public class ChromeTest {
 		driver.findElement(Click_linktext).click();
 		String title=driver.getTitle();
 		System.out.println(title);
+                Assert.assertEquals("QA InfoTech | Your Software Testing Partner", title);
+
 	}
 	@AfterSuite
 	public void close_driver()
